@@ -10,9 +10,11 @@ Clone this code into kaldi/egs and move the CGN code to that same level (as it i
 Make sure to change the paths to the right directories and files, there are quite a lot of them and most of them are static.
 
 To train the triphones: kaldi_egs_CGN-master/s5/run.sh
+
 To train the BLSTM: kaldi_egs_CGN-master/s5/local/chain/tuning/run_tdnn_blstm.sh
 
 To test the model: jasmin/s5_vl/scripts_hpc/sbatch/jasmin.sh
+
 To rescore with RNNLM: jasmin/s5_vl/scripts_hpc/sbatch/jasmin_rnnlm.sh
 
 To get PER: Move the files from the PER folder to the folder where your decode folders exist (for me: kaldi/egs/kaldi_egs_CGN/s5/exp/chain_cleaned/tdnn_lstm1a_blstm_sp_ld5)
